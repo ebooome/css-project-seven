@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,500,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+h1, h2, h3, h4, h5, body, html{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.header .header__menu{
+    font-weight: 700;
+    transform: rotate(90deg);
+    font-size: 22px;
+}
+
+.gallery{
+    background: linear-gradient(to right, #283048,#859398);
+    padding: 40px;
+}
+
+.gallery__wrapper,
+.content{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.gallery__wrapper{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery .gallery__item{
+    height: 25vh;
+    background-size: cover;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-position: center;
+}
+
+.gallery .gallery__item:first-child {
+    background-image: url(https://www.booooooom.com/wp-content/uploads/2020/03/Phuong-Nguyen-Origin-of-Life-600x948.jpg);
+}
+  
+  .gallery .gallery__item:nth-child(2) {
+    background-image: url(https://www.booooooom.com/wp-content/uploads/2020/03/Arenophile-min-1-600x759.jpg);
+}
+  
+  .gallery .gallery__item:last-child {
+    background-image: url(https://www.booooooom.com/wp-content/uploads/2020/03/South_Heaven_037.jpg);
+}
+
+.content{
+    margin-top: 50px;
+    padding: 0px 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+.content .content__title{
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.content .content__description{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+
+.content .content__column {
+    display: grid;
+    grid-gap: 30px;
+}
+
+.content .content__datalist{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    list-style: none;
+    margin: 30px 0px;
+}
+
+.content__datalist .datalist__name{
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.content__datalist .datalist__value{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.content .content__link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #283048;
+}
